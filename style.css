@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans';
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-position: left 0 top -500px, right 0px bottom -500px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.main-container {
+    background-color: white;
+    margin: 25px;
+    border-radius: 7px;
+}
+
+.top-background {
+    left: 0;
+    top: -500px;
+}
+
+.bottom-background {
+    right: 0;
+    bottom: -500px;
+}
+
+.img-div {
+    position: relative;
+}
+
+.pattern-img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.avatar {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid white;
+    left: 50%;
+    bottom: -30%;
+    transform: translate(-50%, 0);
+}
+
+.info-div {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.age {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.place {
+    color: var(--dark-grayish-blue);
+    margin-bottom: 30px;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #a9a9a94a;
+}
+
+.count {
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.count h2 {
+    font-size: 1.3rem;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 5px;
+}
+
+.count p {
+    color: var(--dark-grayish-blue);
+    font-size: 0.9rem;
+}
+
+.followers,
+.likes,
+.photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution {
+    color: rgba(255, 255, 255, 0.774);
+    max-width: 500px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
